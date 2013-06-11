@@ -1,4 +1,4 @@
-package com.soulmatt.lucky;
+package com.soulmatt.lucky.mlb;
 
 import java.io.IOException;
 import java.util.Locale;
@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Handles requests for the application home page.
  */
 @Controller
-public class HomeController {
+public class MlbController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(MlbController.class);
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) throws IOException {
